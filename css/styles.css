@@ -1,69 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 body {
-    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: Roboto, sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-}
-
-.header,
-.footer {
-    height: 30px;
-    padding: 20px;
-    margin: 0;
-    display: flex;
     justify-content: space-between;
+
 }
 
-.bottom {
-    padding-bottom: 5px;
-    background-color: #eeeeee;
+.header {
+    height: 72px;
+    background: darkmagenta;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px;
 }
 
-.left-links,
-.right-links {
+
+.container {
+    flex: 1;
     display: flex;
+}
+
+.footer {
+    height: 72px;
+    background: #eee;
+    color: darkmagenta;
+    text-align: center;
+    line-height: 72px;
+}
+
+.sidebar {
+    flex-shrink: 0;
+    width: 300px;
+    background: royalblue;
+    padding: 16px;
+}
+
+ul {
+    list-style: none;
+    font-size: 24px;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
-    gap: 12px;
-    list-style-type: none;
 }
 
 a {
     text-decoration: none;
-    color: #666;
+    color: white;
+
 }
 
-img {
-    width: 600px;
+li {
+    margin-bottom: 8px;
 }
 
-button {
-    font-family: Roboto, sans-serif;
-    border: none;
-    border-radius: 8px;
-    background: #eee;
-    padding: 8px 16px;
-}
-
-input {
-    border: 1px solid #ddd;
-    border-radius: 16px;
-    padding: 8px 24px;
-    width: 400px;
-    margin-bottom: 16px;
-}
-
-.content {
-    flex: 1;
+.card-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card {
+    flex border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
+    border-radius: 4px;
+    width: 200px;
+    padding: 30px;
+    margin: 16px;
 }
